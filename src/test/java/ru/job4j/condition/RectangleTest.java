@@ -18,6 +18,7 @@ class RectangleTest {
 	void whenLength231AndWidth123ThenResult261Dot7() {
 		double length = 231, width = 123;
 		double expected = 261.70;
+
 		double output = Rectangle.diagonal(length, width);
 		assertThat(output).isEqualTo(expected, withPrecision(0.01));
 	}
