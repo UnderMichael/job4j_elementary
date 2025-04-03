@@ -7,6 +7,7 @@ import static org.assertj.core.api.Assertions.withPrecision;
 
 class ConverterTest {
 
+
 	@Test
 	void whenConvert180RblThen2Euro() {
 		float input = 180;
@@ -15,6 +16,7 @@ class ConverterTest {
 		float value = 0.0001f;
 		assertThat(output).isEqualTo(expected, withPrecision(value));
 	}
+
 
 	@Test
 	void whenConvert150RblThen2Dollar() {
