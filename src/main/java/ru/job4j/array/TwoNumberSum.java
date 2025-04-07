@@ -6,8 +6,6 @@ public class TwoNumberSum {
 		int i = 0;
 		int j = array.length - 1;
 		while (i < j) {
-			System.out.println(j);
-			System.out.println(i);
 			if (array[i] + array[j] == target) {
 				result[0] = i;
 				result[1] = j;
