@@ -13,11 +13,11 @@ public class Machine {
 			int coin = coins[index];
 			if (coin > money) {
 				index++;
-				continue;
+			} else {
+				money -= coin;
+				result[size] = coin;
+				size++;
 			}
-			money -= coin;
-			result[size] = coin;
-			size++;
 		}
 
 		return Arrays.copyOf(result, size);
