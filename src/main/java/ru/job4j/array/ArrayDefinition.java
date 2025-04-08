@@ -8,7 +8,6 @@ public class ArrayDefinition {
 		System.out.println("length of ages is " + ages.length);
 		System.out.println("length of surnames is " + surnames.length);
 		System.out.println("length of prices is " + prices.length);
-
 		String[] names = new String[4];
 		names[0] = "john";
 		names[1] = "bob";

@@ -19,7 +19,6 @@ public class Machine {
 				size++;
 			}
 		}
-
 		return Arrays.copyOf(result, size);
 	}
 }
