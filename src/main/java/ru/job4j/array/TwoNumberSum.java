@@ -6,16 +6,17 @@ public class TwoNumberSum {
 		int i = 0;
 		int j = array.length - 1;
 		while (i < j) {
-			if (array[i] + array[j] == target) {
+			int sum = array[i] + array[j];
+			if (sum == target) {
 				result[0] = i;
 				result[1] = j;
 				return result;
 			}
-			if (j == i + 1) {
+			if (sum > target) {
+				j--;
+			} else {
 				i++;
-				j = array.length - 1;
 			}
-			j--;
 		}
 		return new int[0];
 	}
